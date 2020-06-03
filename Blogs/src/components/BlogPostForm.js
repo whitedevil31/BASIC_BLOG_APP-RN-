@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet, TextInput, Button } from "react-native";
 import EditScreen from "../screens/EditScreen";
-const BlogPostForm = ({ onSubmit, Value }) => {
+const BlogPostForm = ({ onSubmit, initialValue }) => {
   const [title, setTitle] = useState(initialValue.title);
   const [content, setContent] = useState(initialValue.content);
   return (
