@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet, TextInput, Button } from "react-native";
-
-const BlogPostForm = ({ onSubmit, initialValue }) => {
-  const [title, setTitle] = useState(initialValue?.title);
-  const [content, setContent] = useState(initialValue?.content);
+import EditScreen from "../screens/EditScreen";
+const BlogPostForm = ({ onSubmit, Value }) => {
+  const [title, setTitle] = useState(initialValue.title);
+  const [content, setContent] = useState(initialValue.content);
   return (
     <View>
       <Text style={styles.text}>Enter title:</Text>
