@@ -6,11 +6,11 @@ import { TouchableOpacity } from "react-native-gesture-handler";
 
 const EditScreen = ({ navigation, route }) => {
   const { id, title, content } = route.params;
-  const items = { title, content };
+ 
 
   return (
     <BlogPostForm
-      intialValue={{ title: items.title, content: items.content }}
+      initialValue={{ title: title, content: content }}
       onSubmit={(title, content) => console.log(title, content)}
     />
   );
